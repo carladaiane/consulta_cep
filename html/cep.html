@@ -10,27 +10,27 @@
   <body>
     <h1>Consultar CEP</h1>
     <section class="sec-form">
-        <form class="app-form">
+        <form class="app-form" data-toggle-form-edit="#id-form">
             <div class="form-group">
                 <input type="text" autocomplete = "off" name="cep" id="cep" required>
                 <span>CEP</span>
             </div>
             <div class="form-group">
-                <input type="text" autocomplete = "off" name="rua" id="logradouro" required>
-                <span>Logradouro</span>
-                
+                <label for = "logradouro" hidden = "true">Logradouro</label>
+                <input type="text" value = "aaaa" autocomplete = "off" name="rua" id="logradouro" aria-required="" hidden = "true" disabled="true"> 
             </div>
             <div class="form-group">
-                <input type="text" autocomplete = "off" name="bairro" id="bairro" required>
-                <span>Bairro</span>
+                <label form="bairro" hidden = "true">Bairro</label>
+                <input type="text" autocomplete = "off" name="bairro" id="bairro" required hidden = "true" disabled="true">            
             </div>
             <div class="form-group">
-                <input type="text" autocomplete = "off" name="local" id="localidade" required>
-                <span>Cidade</span>
+                <label for="localidade" hidden = "true">Cidade</label>
+                <input type="text" autocomplete = "off" name="local" id="localidade" required hidden = "true" disabled="true">
+             
             </div>
             <div class="form-group">
-                <input type="text" autocomplete = "off" name="uf" id="uf" required>
-                <span>UF</span>
+                <label for="uf" hidden = "true">UF</label>
+                <input type="text" autocomplete = "off" name="uf" id="uf" required hidden = "true">
             </div>
             <div>
                 <P id = "alert"></P>

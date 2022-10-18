@@ -1,12 +1,14 @@
 const showdata = (result) => {
   for (const campo in result) {
     if (document.getElementById(`${campo}`)) {
+      document.getElementById(`${campo}`).hidden = false;
       document.getElementById(`${campo}`).value = result[campo];
     }
   }
+  document.getElementById("uf").disabled = true;
 };
 
-document.getElementById("consultar").addEventListener("blur", (e) => {
+document.getElementById("consultar").addEventListener("click", (e) => {
   const cep = document.getElementById("cep").value.replace("-", "");
   const options = {
     method: "GET",
