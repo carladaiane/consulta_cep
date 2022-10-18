@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: #41436a; */
+  background-image: url('/image/casas.jpg');
+}
+
+h1 {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Acme', sans-serif; */
+  font-family: "Martel", serif;
+}
+
+.sec-form {
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 450px;
+  padding: 45px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.app-form input {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  padding-left: 8px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+
+.app-form textarea {
+  width: 100%;
+  outline: none;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.app-form button {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #bb4461;
+}
+
+.app-form button:hover {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #bb4461;
+  background-color: #bb4461;
+  transition: all 1s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.app-form span {
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.app-form input:focus ~ span,
+.app-form input:valid ~ span {
+  transform: translateY(-40px);
+  opacity: 1;
+  font-size: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
