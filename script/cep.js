@@ -2,7 +2,6 @@ const showdata = (result) => {
   for (const campo in result) {
     if (document.getElementById(`${campo}`)) {
       document.getElementById(`${campo}`).value = result[campo];
-      document.getElementById(`${campo}`)
     }
   }
 };
