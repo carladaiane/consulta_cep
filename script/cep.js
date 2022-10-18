@@ -5,7 +5,7 @@ const showdata = (result) => {
       document.getElementById(`${campo}`).value = result[campo];
     }
   }
-  document.getElementById("uf").disabled = true;
+  document.getElementById("uf").readOnly = true;
 };
 
 document.getElementById("consultar").addEventListener("click", (e) => {
