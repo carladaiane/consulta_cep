@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
   /* background-color: #41436a; */
   background-image: url("/image/casas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -74,6 +76,7 @@ h1 {
   transition: all 1s ease;
   cursor: pointer;
   font-weight: bold;
+  color: white;
 }
 
 .app-form span {
